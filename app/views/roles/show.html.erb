@@ -1,0 +1,16 @@
+<div class="page-header">
+  <%= link_to roles_path, class: 'btn btn-default' do %>
+    All Roles
+  <% end %>
+  <%= link_to edit_role_path(@role), class: 'btn btn-primary' do %>
+    Edit
+  <% end %>
+  <h1>Show role</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Name:</dt>
+  <dd><%= @role.name %></dd>
+  <dt>Permissions:</dt>
+  <dd><%= @role.permissions %></dd>
+</dl>

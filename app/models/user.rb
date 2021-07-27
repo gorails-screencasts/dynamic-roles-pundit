@@ -8,4 +8,9 @@ class User < ApplicationRecord
 
   has_many :notifications, as: :recipient
   has_many :services
+  belongs_to :role
+
+  before_validation do
+    self.role ||= Role.find_by(name: "reviewer")
+  end
 end

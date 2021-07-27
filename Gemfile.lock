@@ -287,6 +287,8 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
+    store_attribute (0.8.1)
+      activerecord (>= 5.0)
     thor (1.1.0)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -355,6 +357,7 @@ DEPENDENCIES
   sitemap_generator (~> 6.1, >= 6.1.2)
   spring
   sqlite3 (~> 1.4)
+  store_attribute (~> 0.8.1)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
